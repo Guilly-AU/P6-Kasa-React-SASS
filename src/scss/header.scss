@@ -1,0 +1,23 @@
+@import "color.scss";
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 45px 0px;
+  
+  div {
+    list-style-type: none;
+   
+    a {
+      color: $text-color;
+      text-decoration: none;
+      margin-right: 60px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

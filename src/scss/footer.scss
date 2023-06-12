@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+  
+  .kasa-svg {
+    width: 100px;
+  }
+}
