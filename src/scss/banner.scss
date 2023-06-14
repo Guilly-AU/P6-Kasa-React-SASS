@@ -1,0 +1,31 @@
+@mixin banner-position {
+  margin: 0px 100px;
+  position: relative;
+}
+
+@mixin banner-img-size {
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(60%);
+}
+
+.container-banner {
+  @include banner-position;
+
+    img {
+      @include banner-img-size
+    } 
+
+    .texte-over {
+      width: max-content;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 48px;
+    }
+}

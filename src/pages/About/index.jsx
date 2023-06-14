@@ -1,9 +1,12 @@
+import React from "react"
+import Banner from "../../components/Banner"
+import imgAbout from "../../assets/Image-Banner-about.png";
 function About() {
   return (
     <div>
-      <h1> A propos</h1>
-    </div>
-  )
+    <Banner src={imgAbout} alt="Paysage de montagne eneigé" />
+  </div>
+);
 }
 
 export default About

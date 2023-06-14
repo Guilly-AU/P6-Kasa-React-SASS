@@ -1,8 +1,15 @@
+import React from "react"
+import Banner from "../../components/Banner"
+import imgHome from "../../assets/Image-Banner-Home.png"
+import Card from "../../components/Card"
 function Home() {
   return (
-    <div>
-      <h1> Page d'accueil 🏠</h1>
-    </div>
+   
+  <main>
+    <Banner src={imgHome} alt="Paysage de falaise" text="Chez vous, partout et ailleurs" />
+    <Card />
+  </main>
+    
   )
 }
 

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <h2>
-        <img src={logo} alt='logo kasa' className='kasa-svg' />
+        <img src={logo} alt='logo kasa'/>
       </h2>
       <p>&copy; 2020 Kasa. All rights reserved</p>
     </footer>
