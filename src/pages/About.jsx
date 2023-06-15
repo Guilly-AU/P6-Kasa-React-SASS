@@ -1,6 +1,7 @@
 import React from "react"
-import Banner from "../../components/Banner"
-import imgAbout from "../../assets/Image-Banner-about.png";
+import Banner from "../components/Banner"
+import imgAbout from "../assets/Image-Banner-about.png";
+
 function About() {
   return (
     <div>

@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+}
+footer .kasa-svg {
+  width: 100px;
+}/*# sourceMappingURL=footer.css.map */
