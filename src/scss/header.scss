@@ -1,4 +1,4 @@
-@import "color.scss";
+@import "./color.scss";
 
 nav {
   display: flex;
@@ -11,13 +11,19 @@ nav {
   div {
     list-style-type: none;
    
+    .active {
+      text-decoration: underline;
+    }
+
     a {
-      color: $text-color;
+      color: $primary-color;
       text-decoration: none;
       margin-right: 60px;
+      font-weight: 500;
+      font-size: 24px;
 
       &:hover {
-        text-decoration: underline;
+        opacity: 50%;;
       }
     }
   }

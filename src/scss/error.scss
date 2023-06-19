@@ -1,0 +1,25 @@
+@import "./color.scss";
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $primary-color;
+    font-size: 288px;
+    font-weight: 700;
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 36px;
+  }
+
+  .link-home {
+    color: $primary-color;
+    font-size: 18px;
+  }
+
+}

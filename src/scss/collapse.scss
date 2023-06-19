@@ -1,0 +1,76 @@
+@import "./color.scss";
+
+@keyframes chevronRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+    height: 50px;
+    background-color: $primary-color;
+    color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+
+  .description-wrapper {
+    width: 72%;
+    color: $primary-color;
+    background-color:$background-color;
+    font-size: 20px;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .description-wrapper.active {
+    overflow: hidden;
+    transition: heigh 0.3s ease;
+  }
+
+    li {
+      list-style: none;
+      font-size: 18px;
+    }
+    .collapse-title-texte {
+      font-size: 22px;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    .btn-chevron {
+     margin-right: 15px;
+     cursor: pointer;
+    }
+
+    // .open {
+    //   animation: chevronRotate 1s linear;
+    //   transform: rotate(180deg);
+    //  }
+
+    //  .close {
+    //   animation: chevronRotate 1s linear;
+    //   transform: rotate(0deg);
+    //  }
+    //  transform: rotate(180deg);
+    
+
+    svg {
+      fill: white;
+      height: 20px;
+    }
+
+}
