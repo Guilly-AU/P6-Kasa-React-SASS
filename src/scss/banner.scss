@@ -1,15 +1,4 @@
-@mixin banner-position {
-  margin: 0px 100px;
-  position: relative;
-}
-
-@mixin banner-img-size {
-  width: 100%;
-  height: 223px;
-  object-fit: cover;
-  border-radius: 25px;
-  filter: brightness(60%);
-}
+@import "mixin.scss";
 
 .container-banner {
   @include banner-position;

@@ -1,34 +1,41 @@
 import React from "react";
-import {useState} from 'react';
-import { ReactComponent as ChevronDown } from "../assets/chevron-down-solid.svg";
-import { ReactComponent as ChevronUp } from "../assets/chevron-up-solid.svg";
+import {useState} from "react";
+import ArrowUp from "../assets/arrow-up.png";
+import ArrowDown from "../assets/arrow-down.png";
+import "../scss/collapse.scss"
 
-function Collapse (props) {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggling = () => setIsOpen(!isOpen);
+function Collapse({ title, description }) {
+   const [isTrigger, setIsTrigger] = useState(false)
 
-return (
-  <section className="collapse-container">
-    <div className="title-wrapper">
-      <h2 className="collapse-title-texte">{props.title}</h2>
-      <div className={`btn-chevron ${isOpen ? 'active' : 'close'}`}
-      onClick={toggling}>
-        {isOpen ? (
-          <ChevronDown/>
-        ) : (
-          <ChevronUp/>
-        )}
-      </div>
-    </div>
-    {isOpen && (
-      <div className={`description-wrapper ${isOpen? 'active' : 'clsoe'}`}>
-        <ul>
-          <li>{props.description}</li>
-        </ul>
-      </div>
-    )}
-  </section>
-);
+   return isTrigger ? (
+      <article className="collapse-container">
+         <div className="title-wrapper">
+            <h3 className="collapse-title-texte" key={title}>
+               {title}
+            </h3>
+            <div
+               className="btn-chevron"
+               onClick={() => setIsTrigger(false)}>
+                  <img src={ArrowDown} alt="Flèche vers le bas."/>
+            </div>
+         </div>
+         <div className="description-wrapper" 
+         key={description}>
+            {description}
+         </div>
+      </article>
+   ) : (
+      <article className="collapse-container">
+         <div className="title-wrapper">
+            <h3 className="collapse-title-texte">{title}</h3>
+            <div
+               className="btn-chevron"
+               onClick={() => setIsTrigger(true)}>
+                  <img src={ArrowUp} alt="Flèche vers le haut."/>
+               </div>
+         </div>
+      </article>
+   )
 }
 
 export default Collapse

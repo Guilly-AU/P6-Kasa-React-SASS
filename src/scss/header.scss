@@ -5,8 +5,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 45px 100px;
-
+  margin: 45px;
   
   div {
     list-style-type: none;
@@ -18,7 +17,7 @@ nav {
     a {
       color: $primary-color;
       text-decoration: none;
-      margin-right: 60px;
+      margin-left: 60px;
       font-weight: 500;
       font-size: 24px;
 

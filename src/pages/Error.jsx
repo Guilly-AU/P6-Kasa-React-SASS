@@ -1,12 +1,12 @@
 import "../scss/error.scss"
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Error() {
   return (
     <main className="error-container">
       <h1>404</h1>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <NavLink className={"link-home"} to="/home">Retouner sur la page d'acceuil</NavLink>
+      <Link className={"link-home"} to="/">Retouner sur la page d'acceuil</Link>
     </main>
   )
 }

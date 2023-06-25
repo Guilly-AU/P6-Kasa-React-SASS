@@ -1,0 +1,54 @@
+@import "./color.scss";
+
+.acc-description{
+  h1 {
+    color: $primary-color;
+    font-size: 36px;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 18px;
+  }
+}
+
+.acc-collapse-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .collapse-container {
+    width: 47%;
+    margin: 0px;
+  }
+}
+
+// .slider-container {
+//   width: 100%;
+//   height: 415px;
+
+//   .left-arrow {
+//     position: absolute;
+//     top: 50%;
+//     transform: translate(0,-50%);
+//     left: 32px;
+//     z-index: 1;
+//     cursor: pointer;
+//   }
+
+//   .right-arrow {
+//     position: absolute;
+//     top: 50%;
+//     transform: translate(0,-50%);
+//     right: 32px;
+//     z-index: 1;
+//     cursor: pointer;
+//   }
+
+//   svg {
+//     fill: white;
+//     height: 70px;
+//   }
+// }
+

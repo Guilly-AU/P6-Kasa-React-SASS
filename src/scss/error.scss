@@ -20,6 +20,9 @@
   .link-home {
     color: $primary-color;
     font-size: 18px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
 }

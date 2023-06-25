@@ -1,0 +1,50 @@
+@import "mixin.scss";
+
+.slider {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-bottom: 30px;
+ 
+  .arrow {
+    @include arrow-slider;
+  }
+
+  .arrow-left {
+    left: 2rem;
+  }
+
+  .arrow-right {
+    right: 2rem;
+  }
+  
+
+  .image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .numbering {
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+    color: white;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.02);
+  }
+}

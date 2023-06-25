@@ -5,8 +5,19 @@ body {
   font-family: 'Montserrat';
   max-width: 1440px;
 }
+
 h1, 
 h2 {
   padding: 0px;
   margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main, nav {
+  margin-left: 100px;
+  margin-right: 100px;
 }
