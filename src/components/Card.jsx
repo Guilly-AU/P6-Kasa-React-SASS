@@ -10,6 +10,7 @@ function Card() {
         {AccomodationList.map((list) => (
           <Link to={`/${list.id}`} key={list.id}>
           <article className="card-container"> 
+            <div className="filter"></div>
             <img className='card-img' src={list.cover} alt={list.title}/>
             <h2>{list.title}</h2>
           </article>

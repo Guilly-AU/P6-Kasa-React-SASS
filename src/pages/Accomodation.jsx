@@ -1,9 +1,10 @@
 import React from "react";
-import Collapse from "../components/Collapse";
 import { useParams } from "react-router-dom";
+import Collapse from "../components/Collapse";
+import Sliders from "../components/Slider";
 import AccomodationList from "../data/logements.json"
 import "../scss/accomodation.scss"
-import Sliders from "../components/Slider";
+
 
 function Accomodation() {
   const { id } = useParams();
