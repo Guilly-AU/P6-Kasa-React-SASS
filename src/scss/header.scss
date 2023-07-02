@@ -6,6 +6,21 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 45px;
+
+  .logo-Kasa {
+    color: $primary-color;
+    font-size: 90px;
+
+    img, a {
+      padding: 0px 5px;
+      margin: 0px;
+      &:hover {
+        opacity: 1;
+        scale: 1.1;
+        cursor: pointer;
+      }
+    }
+  }
   
   div {
     list-style-type: none;
@@ -16,13 +31,12 @@ nav {
 
     a {
       color: $primary-color;
-      text-decoration: none;
       margin-left: 60px;
       font-weight: 500;
       font-size: 24px;
 
       &:hover {
-        opacity: 50%;;
+        opacity: 50%;
       }
     }
   }

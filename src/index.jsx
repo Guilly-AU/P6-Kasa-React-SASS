@@ -11,16 +11,16 @@ import "./scss/layout.scss"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/:id' element={<Accomodation />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
-      <Footer />
-    </Router>
-  </React.StrictMode>
+	<React.StrictMode>
+		<Router>
+			<Header />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/logement/:id' element={<Accomodation />} />
+				<Route path='*' element={<Error />} />
+			</Routes>
+			<Footer />
+		</Router>
+	</React.StrictMode>
 );

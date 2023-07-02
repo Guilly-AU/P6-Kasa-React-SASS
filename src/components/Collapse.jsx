@@ -1,41 +1,45 @@
-import React from "react";
-import {useState} from "react";
+import React, {useRef, useState} from "react";
 import ArrowUp from "../assets/arrow-up.png";
-import ArrowDown from "../assets/arrow-down.png";
 import "../scss/collapse.scss"
 
 function Collapse({ title, description }) {
-   const [isTrigger, setIsTrigger] = useState(false)
+   const [isOpen, setIsOpen] = useState(false);
 
-   return isTrigger ? (
-      <article className="collapse-container">
-         <div className="title-wrapper">
-            <h3 className="collapse-title-texte" key={title}>
-               {title}
-            </h3>
-            <div
-               className="btn-chevron"
-               onClick={() => setIsTrigger(false)}>
-                  <img src={ArrowDown} alt="Flèche vers le bas."/>
+   const handleToggle = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+   };
+
+   const contentRef = useRef();
+
+  return (
+   <article className="collapse-container">
+      <div className="title-wrapper">
+         <h3 className="collapse-title-texte" key={title}>{title}</h3>
+         <div onClick={handleToggle}>
+            <img 
+            className={isOpen ? "arrow-rotate down" : "arrow-rotate"} 
+            src={ArrowUp} 
+            alt={isOpen ? "Flèche vers le bas." : "Flèche vers le haut."}/>
+         </div>
+      </div>
+      <div className="content-parent"
+         ref={contentRef} 
+         style={isOpen ? { height: contentRef.current.scrollHeight + "px" } : { height: "0px" }}>
+            <div className="description-wrapper">
+            {Array.isArray(description) ? (
+               <ul>
+                  {description.map((item, index) => (
+                  <li key={index}>{item}</li>
+                  ))}
+               </ul>
+            ) : ( 
+               <p>{description}</p>
+            )}
             </div>
-         </div>
-         <div className="description-wrapper" 
-         key={description}>
-            {description}
-         </div>
-      </article>
-   ) : (
-      <article className="collapse-container">
-         <div className="title-wrapper">
-            <h3 className="collapse-title-texte">{title}</h3>
-            <div
-               className="btn-chevron"
-               onClick={() => setIsTrigger(true)}>
-                  <img src={ArrowUp} alt="Flèche vers le haut."/>
-               </div>
-         </div>
-      </article>
-   )
+      </div>
+   </article>
+  )
 }
 
-export default Collapse
+export default Collapse;

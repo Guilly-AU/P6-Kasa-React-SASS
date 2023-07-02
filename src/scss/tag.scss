@@ -1,0 +1,15 @@
+@import "./color.scss";
+
+.tag {
+  margin-top: 20px;
+  display: flex;
+  gap: 0.5rem;
+
+  span {
+    color: white;
+    padding: 5px 25px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
