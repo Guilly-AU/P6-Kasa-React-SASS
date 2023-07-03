@@ -8,6 +8,11 @@
   object-fit: cover;
   border-radius: 25px;
   filter: brightness(60%);
+
+  @media (max-width: 600px) {
+    height: 110px;
+    border-radius: 10px;
+  }
 }
 
 @mixin arrow-slider {
@@ -16,4 +21,8 @@
   transform: translate(0,-50%);
   z-index: 1;
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    height: 30px;
+  }
 }

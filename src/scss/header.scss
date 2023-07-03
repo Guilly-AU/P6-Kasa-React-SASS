@@ -1,19 +1,35 @@
 @import "./color.scss";
 
-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 45px;
 
+  @media (max-width: 600px) {
+    margin: 20px;
+  }
+
   .logo-Kasa {
     color: $primary-color;
     font-size: 90px;
+    font-weight: 600;
+
+    @media (max-width: 600px) {
+      font-size: 50px;
+    }
 
     img, a {
       padding: 0px 5px;
       margin: 0px;
+      vertical-align: middle;
+
+      @media (max-width: 600px) {
+        width: 30px;
+        padding: 2px;
+        
+      }
       &:hover {
         opacity: 1;
         scale: 1.1;
@@ -34,6 +50,11 @@ nav {
       margin-left: 60px;
       font-weight: 500;
       font-size: 24px;
+
+      @media (max-width: 600px) {
+        font-size: 16px;
+        margin-left: 20px;
+      }
 
       &:hover {
         opacity: 50%;

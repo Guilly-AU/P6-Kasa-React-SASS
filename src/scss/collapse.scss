@@ -12,16 +12,29 @@
   margin-top: 30px;
   border-radius: 5px;
 
+  @media (max-width: 600px) {
+    height: 30px;
+    margin-top: 10px;
+  }
+
   .collapse-title-texte {
     font-size: 22px;
     margin-left: 15px;
     font-weight: 500;
+
+    @media (max-width: 600px) {
+      font-size: 13px;
+    }
 }
 
   .arrow-rotate{
     margin-right: 15px;
     cursor: pointer;
     transition: all 0.2s linear;
+
+    @media (max-width:600px) {
+      height: 25px;
+    }
   }
 
   .arrow-rotate.down {
@@ -43,6 +56,10 @@
     background-color:$background-color;
     font-size: 18px;
     border-radius: 0px 0px 5px 5px;
+
+    @media (max-width:600px) {
+      font-size: 12px;
+    }
   }
 
   ul, p {
@@ -54,6 +71,10 @@
       padding: 0px;
       list-style: none;
       font-size: 18px;
+
+      @media (max-width:600px) {
+        font-size: 12px;
+      }
     }
   }
 }

@@ -4,11 +4,20 @@
   h1 {
     color: $primary-color;
     font-size: 36px;
+
+    @media (max-width:600px) {
+      font-size: 18px;
+    }
   }
 
   h2 {
     color: $primary-color;
     font-size: 18px;
+    margin-top: 10px;
+
+    @media (max-width:600px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -18,34 +27,63 @@
   justify-content: space-between;
   align-items: baseline;
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
   .collapse-container {
     width: 47%;
     margin: 0px;
+    
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 }
 
-.acc-owner {
+.right-info {
+  @media (max-width: 600px) {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-
-  h3 {
-    color: $primary-color;
-    width: 80px;
-    text-align: end;
-    margin-right: 10px;
-    font-size: 18px;
-    font-weight: 500;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   }
+  .acc-owner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-  img {
-    border-radius: 100%;
-    object-fit: cover;
-    height: 64px;
+    h3 {
+      color: $primary-color;
+      width: 80px;
+      text-align: end;
+      margin-right: 10px;
+      font-size: 18px;
+      font-weight: 500;
+
+      @media (max-width:600px) {
+        font-size: 12px;
+        width: 60px;
+      }
+    }
+
+    img {
+      border-radius: 100%;
+      object-fit: cover;
+      height: 64px;
+
+      @media (max-width:600px) {
+        height: 32px;
+      }
+    }
   }
 }
 
 .info {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }

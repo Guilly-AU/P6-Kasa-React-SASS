@@ -6,10 +6,21 @@
   background-color: $background-color;
   border-radius: 25px;
 
+  @media (max-width: 600px) {
+    background-color: white;
+    margin: 20px 0px;
+    padding: 0px;
+  }
+
   .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
   }
   
     .card-container {
@@ -17,6 +28,13 @@
       overflow: hidden;
       height: 340px;
       position: relative;
+      &:hover {
+        opacity: 0.8;
+      }
+
+      @media (max-width: 600px) {
+        height: 255px;
+      }
     }
 
     .card-img {
@@ -48,10 +66,3 @@
       font-size: 16px;
     }
 }
-
-
-
-
-
-
-

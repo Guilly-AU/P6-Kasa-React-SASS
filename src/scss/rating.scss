@@ -3,4 +3,10 @@
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
+
+  img{
+    @media (max-width: 600px) {
+      height: 13px;
+    }
+  }
 }
