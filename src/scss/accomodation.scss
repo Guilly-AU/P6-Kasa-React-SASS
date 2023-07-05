@@ -1,13 +1,13 @@
 @import "./color.scss";
 
 .acc-description{
+  
   h1 {
     color: $primary-color;
     font-size: 36px;
 
     @media (max-width: 1024px) {
       font-size: 27px;
-      width: 420px;
     }
 
     @media (max-width:600px) {
@@ -55,12 +55,14 @@
 }
 
 .right-info {
+
   @media (max-width: 600px) {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
   }
+
   .acc-owner {
     display: flex;
     justify-content: flex-end;

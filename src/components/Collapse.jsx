@@ -7,7 +7,6 @@ function Collapse({ title, description }) {
 
    const handleToggle = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
    };
 
    const contentRef = useRef();

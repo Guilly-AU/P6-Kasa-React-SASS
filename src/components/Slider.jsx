@@ -16,10 +16,6 @@ function Sliders ({slides}) {
       setCurrent(indexSlide === 0 ? nbSlide -1 : indexSlide -1)
    }
 
-  console.log(nbSlide);
-  console.log(nbSlide -1);
-  console.log(indexSlide);
-
    return (
       <section className="slider">
          {nbSlide > 1 && (

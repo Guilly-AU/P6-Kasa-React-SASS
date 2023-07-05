@@ -19,9 +19,11 @@
     @media (max-width: 1024px) {
       font-size: 70px;
     }
-    
     @media (max-width: 600px) {
       font-size: 50px;
+    }
+    @media (max-width: 340px) {
+      font-size: 0px;
     }
 
     img, a {
@@ -35,8 +37,12 @@
       @media (max-width: 600px) {
         width: 30px;
         padding: 2px;
-        
       }
+      @media (max-width: 340px) {
+        margin: 5px;
+        width: 40px;
+      }
+        
       &:hover {
         opacity: 1;
         scale: 1.1;
