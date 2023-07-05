@@ -3,10 +3,9 @@ footer {
   flex-direction: column;
   background-color: black;
   color: white;
-  height: 210px;
+  padding: 50px;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
 
   p {
     text-align: center;
@@ -16,7 +15,6 @@ footer {
     font-size: 14px;
   }
 }
-  
   .kasa-svg {
     width: 100px;
   }

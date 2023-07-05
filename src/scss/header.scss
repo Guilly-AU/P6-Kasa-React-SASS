@@ -5,10 +5,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 45px;
+  height: 15vh;
 
   @media (max-width: 600px) {
-    margin: 20px;
+    height: 10vh;
   }
 
   .logo-Kasa {

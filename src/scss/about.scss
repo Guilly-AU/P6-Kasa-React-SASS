@@ -1,4 +1,16 @@
-.collapse-container {
-  margin: 0px auto;
-  width: 85%;
+.about-collapse {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .collapse-container {
+    margin: auto;
+    width: 85%;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
 }

@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-  margin: auto;
+body, html, #root {
+  margin: 0 auto;
   font-family: 'Montserrat';
   max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     cursor: default;
   }
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1, 
