@@ -5,7 +5,7 @@
 
     img {
       @include banner-img-size
-    } 
+    }
 
     .texte-over {
       width: max-content;
@@ -17,7 +17,11 @@
       color: white;
       font-size: 48px;
 
-      @media (max-width:600px) {
+      @media (max-width: 1024px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 600px) {
         font-size: 24px;
         width: 217px;
         text-align: left;

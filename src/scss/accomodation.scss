@@ -5,6 +5,11 @@
     color: $primary-color;
     font-size: 36px;
 
+    @media (max-width: 1024px) {
+      font-size: 27px;
+      width: 420px;
+    }
+
     @media (max-width:600px) {
       font-size: 18px;
     }
@@ -15,7 +20,12 @@
     font-size: 18px;
     margin-top: 10px;
 
+    @media (max-width:1024px) {
+      font-size: 16px;
+    }
+
     @media (max-width:600px) {
+      margin-top: 5px;
       font-size: 14px;
     }
   }
@@ -31,6 +41,7 @@
 
   @media (max-width: 600px) {
     flex-direction: column;
+    gap: 20px;
   }
 
   .collapse-container {
@@ -63,6 +74,11 @@
       font-size: 18px;
       font-weight: 500;
 
+      @media (max-width:1024px) {
+        font-size: 14px;
+        width: 50px;
+      }
+
       @media (max-width:600px) {
         font-size: 12px;
         width: 60px;
@@ -73,6 +89,10 @@
       border-radius: 100%;
       object-fit: cover;
       height: 64px;
+
+      @media (max-width:1024px) {
+        height: 48px;
+      }
 
       @media (max-width:600px) {
         height: 32px;

@@ -1,16 +1,28 @@
-.about-collapse {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.about {
 
-  .collapse-container {
-    margin: auto;
-    width: 85%;
+  .container-banner {
 
-    @media (max-width: 600px) {
-      width: 100%;
+    img {
+      @media (max-width: 600px){
+      height: 223px;
+      }
+    }
+  }
+
+  .about-collapse {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .collapse-container {
+      margin: auto;
+      width: 85%;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
   }
 }

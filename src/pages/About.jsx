@@ -7,7 +7,7 @@ import "../scss/about.scss"
 
 function About() {
 	return (
-		<main>
+		<main className="about">
 			<Banner src={imgAbout} alt="Paysage de montagne eneigé" />
 			<section className="about-collapse">
 				{AboutList.map((list) => (
