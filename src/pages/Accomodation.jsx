@@ -15,7 +15,6 @@ function Accomodation() {
 	useEffect(() => {
 		if (!accomodation) {
 			navigate("*");
-			return null;
 		} 
 	}, [accomodation, navigate]);
 
