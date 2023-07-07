@@ -1,26 +1,17 @@
-import { Link } from "react-router-dom"
-import React from 'react'
-import AccomodationList from '../data/logements.json'
-import "../scss/card.scss"
+import { Link } from "react-router-dom";
+import React from "react";
+import "../scss/card.scss";
 
-function Card() {
-	return (
-		<section className='card'>
-			<div className='card-wrapper'>
-				{AccomodationList.map((list) => (
-					<Link to={`/logement/${list.id}`} key={list.id}>
-						<article className="card-container"> 
-							<div className="filter"></div>
-							<img className='card-img' src={list.cover} alt={list.title}/>
-							<h2>
-								{list.title}
-							</h2>
-						</article>
-					</Link>
-				))}
-			</div>
-	 	</section>
-  	);
+function Card({ id, cover, title }) {
+  return (
+    <Link to={`/logement/${id}`} key={id}>
+      <article className="card-container">
+        <div className="filter"></div>
+        <img className="card-img" src={cover} alt={title} />
+        <h2>{title}</h2>
+      </article>
+    </Link>
+  );
 }
 
 export default Card;
