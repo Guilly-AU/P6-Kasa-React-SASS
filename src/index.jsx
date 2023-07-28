@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  BrowserRouter,
+} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -12,7 +17,7 @@ import "./scss/layout.scss";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter basename="/P6-Kasa-React-SASS">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +26,6 @@ root.render(
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 );
