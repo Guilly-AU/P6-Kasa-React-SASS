@@ -10,8 +10,8 @@ function Header() {
 					K<Link to="/"><img src={Kasa} alt='logo kasa'/></Link>sa
 				</div>
 				<div>
-					<NavLink to="/">Home</NavLink>
-					<NavLink to="/about">About</NavLink>
+					<NavLink to="/">Accueil</NavLink>
+					<NavLink to="/about">A propos</NavLink>
 				</div>
 			</nav>
 		</header>

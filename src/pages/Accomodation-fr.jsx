@@ -42,7 +42,7 @@ function Accomodation() {
 						<h3>{accomodation.host.name}</h3>
 						<img 
 							src={accomodation.host.picture} 
-							alt={`Portrait of ${accomodation.host.name}`}
+							alt={`Portrait de ${accomodation.host.name}`}
 						/>
 					</article>
 					<Rating
@@ -56,7 +56,7 @@ function Accomodation() {
 					description={accomodation.description}>
 				</Collapse>
 				<Collapse
-					title={"Equipments"}
+					title={"Équipements"}
 					description={accomodation.equipments}> 
 				</Collapse>
 			</section>

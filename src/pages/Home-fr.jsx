@@ -9,8 +9,8 @@ function Home() {
     <main>
       <Banner
         src={imgHome}
-        alt="PaysCliff landscape"
-        text="Home, everywhere and elsewhere."
+        alt="Paysage de falaise"
+        text="Chez vous, partout et ailleurs"
       />
       <section className="card">
         <div className="card-wrapper">

@@ -1,22 +1,22 @@
 [
   {
     "id": "1",
-    "title": "Fiabilité",
-    "description": "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+    "title": "Reliability",
+    "description": "The listings posted on Kasa guarantee total reliability. The photos match the accommodations, and all information is regularly verified by our teams."
   },
   {
     "id": "2",
     "title": "Respect",
-    "description": "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+    "description": "Kindness is one of the founding values of Kasa. Any discriminatory or disruptive behavior towards neighbors will result in exclusion from our platform."
   },
   {
     "id": "3",
     "title": "Service",
-    "description": "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+    "description": "Our teams are at your disposal to provide you with a perfect experience. Feel free to contact us if you have any questions."
   },
   {
     "id": "4",
-    "title": "Sécurité",
-    "description": "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+    "title": "Security",
+    "description": "Safety is Kasa's priority. Both for our hosts and travelers, every accommodation meets the safety criteria established by our services. By leaving a rating for both the host and the tenant, it allows our teams to verify that the standards are being followed. We also organize home safety workshops for our hosts."
   }
 ]
